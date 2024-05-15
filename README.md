@@ -22,8 +22,7 @@ Here's a [live demo Video](https://www.loom.com/share/3ddd9849a3924ccbb95522ea47
 
 To run the Rock Paper Scissors game locally, follow these steps:
 1. Clone the repository to your local machine:
-   ```bash
- git clone https://github.com/BrianShifoko/ROCK-PAPER-SCISSORS-JAVASCRIPT-PROJECT.git
+  git clone https://github.com/BrianShifoko/ROCK-PAPER-SCISSORS-JAVASCRIPT-PROJECT.git
 
 2. Navigate to the project directory
 
