@@ -25,16 +25,16 @@ h1 {
 }
 @keyframes borderColorRotation {
     0% {
-        border-color: rgb(255, 0, 0); /* Red */
+        border-color: rgb(255, 0, 0); 
     }
     33% {
-        border-color: rgb(0, 255, 0); /* Green */
+        border-color: rgb(0, 255, 0); 
     }
     66% {
-        border-color: rgb(0, 0, 255); /* Blue */
+        border-color: rgb(0, 0, 255); 
     }
     100% {
-        border-color: rgb(255, 0, 0); /* Red */
+        border-color: rgb(255, 0, 0); 
     }
 }
 
@@ -93,21 +93,21 @@ button:hover {
 
 @keyframes buttonBorderColorRotation {
     0% {
-        border-color: rgb(255, 0, 0); /* Red */
+        border-color: rgb(255, 0, 0); 
     }
     33% {
-        border-color: rgb(0, 255, 0); /* Green */
+        border-color: rgb(0, 255, 0); 
     }
     66% {
-        border-color: rgb(0, 0, 255); /* Blue */
+        border-color: rgb(0, 0, 255); 
     }
     100% {
-        border-color: rgb(255, 0, 0); /* Red */
+        border-color: rgb(255, 0, 0); 
     }
 }
 
 .animated-border {
-    border: 2px solid rgb(255, 0, 0); /* Initial color Red */
+    border: 2px solid rgb(255, 0, 0); 
     animation: buttonBorderColorRotation 1s infinite;
-    border-radius: 5px; /* Optional: to match button styling */
+    border-radius: 5px; 
 }
