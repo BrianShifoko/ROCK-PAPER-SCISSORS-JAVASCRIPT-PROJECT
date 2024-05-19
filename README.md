@@ -1,5 +1,7 @@
 # Rock Paper Scissors Game
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/982d350f-fe11-4cfd-9ec6-50760786fbc0/deploy-status)](https://app.netlify.com/sites/brian-shifoko-rock-paper-scissor/deploys)
+
 Welcome to the Rock Paper Scissors game! This is a simple web-based implementation of the classic game where you compete against the computer to see who wins.
 
 ## Introduction
