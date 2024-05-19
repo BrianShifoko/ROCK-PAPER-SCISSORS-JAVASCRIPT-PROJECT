@@ -12,33 +12,18 @@ function animateButton(choice) {
 
 
 function computerChoice() {
-    // Define the choices and their corresponding probabilities
     const choices = ['rock', 'paper', 'scissors'];
-    const probabilities = [0.4, 0.3, 0.3]; // Adjust the probabilities as needed
-
-    // Generate a random number between 0 and 1
+    const probabilities = [0.4, 0.3, 0.3];
     const random = Math.random();
-
-    // Initialize variables for cumulative probability and the chosen index
     let cumulativeProbability = 0;
-    let chosenIndex = -1;
 
-    // Iterate through the probabilities to determine the chosen index
     for (let i = 0; i < probabilities.length; i++) {
         cumulativeProbability += probabilities[i];
         if (random <= cumulativeProbability) {
-            chosenIndex = i;
-            break;
+            return choices[i];
         }
     }
-
-    // If chosenIndex is still -1 (due to floating-point inaccuracies), choose randomly
-    if (chosenIndex === -1) {
-        chosenIndex = Math.floor(Math.random() * choices.length);
-    }
-
-    // Return the choice corresponding to the chosen index
-    return choices[chosenIndex];
+    return choices[Math.floor(Math.random() * choices.length)];
 }
 
 function determineWinner(playerChoice, computerChoice) {
