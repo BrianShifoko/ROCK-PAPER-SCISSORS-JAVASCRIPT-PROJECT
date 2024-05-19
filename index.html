@@ -10,16 +10,16 @@
     <h1>Rock Paper Scissors</h1>
     <div id="game">
         <div id="playerChoice">
-            <button id="rock" onclick="playerChoice('rock')">🪨</button>
-            <button id="paper" onclick="playerChoice('paper')">📄</button>
-            <button id="scissors" onclick="playerChoice('scissors')">✂️</button>
+            <button id="rock" aria-label="Rock">🪨</button>
+            <button id="paper" aria-label="Paper">📄</button>
+            <button id="scissors" aria-label="Scissors">✂️</button>
         </div>
         <div id="result"></div>
         <div id="score">
             <p>Player Wins: <span id="playerWins">0</span></p>
             <p>Computer Wins: <span id="computerWins">0</span></p>
         </div>
-        <button id="restartButton" onclick="restartGame()">Restart Game</button>
+        <button id="restartButton" aria-label="Restart Game">Restart Game</button>
     </div>
     <script src="script.js"></script>
 </body>

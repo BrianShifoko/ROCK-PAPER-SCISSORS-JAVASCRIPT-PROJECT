@@ -60,3 +60,8 @@ function restartGame() {
     document.getElementById('computerWins').innerText = computerWins;
     document.getElementById('result').innerText = '';
 }
+
+document.getElementById('rock').addEventListener('click', () => playerChoice('rock'));
+document.getElementById('paper').addEventListener('click', () => playerChoice('paper'));
+document.getElementById('scissors').addEventListener('click', () => playerChoice('scissors'));
+document.getElementById('restartButton').addEventListener('click', restartGame);
