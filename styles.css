@@ -111,3 +111,55 @@ button:hover {
     animation: buttonBorderColorRotation 1s infinite;
     border-radius: 5px; 
 }
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px; 
+    }
+
+    button {
+        font-size: 40px; 
+        width: 80px; 
+        height: 80px;
+        line-height: 80px;
+    }
+
+    #playerChoice button {
+        margin: 0 15px; 
+    }
+
+    #restartButton {
+        width: 140px; 
+        height: 80px; 
+        font-size: 16px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px; 
+    }
+
+    #game {
+        padding: 10px; 
+    }
+
+    button {
+        font-size: 30px; 
+        width: 60px; 
+        height: 60px;
+        line-height: 60px;
+    }
+
+    #playerChoice button {
+        margin: 0 10px; 
+    }
+
+    #restartButton {
+        width: 120px;
+        height: 60px; 
+        font-size: 14px; 
+        margin-top: 20px; 
+    }
+}
