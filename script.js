@@ -1,5 +1,15 @@
 let playerWins = 0;
 let computerWins = 0;
+let ties = 0;
+
+function animateButton(choice) {
+    const buttons = document.querySelectorAll('#playerChoice button');
+    buttons.forEach(button => button.classList.remove('animated-border'));
+
+    const selectedButton = document.getElementById(choice);
+    selectedButton.classList.add('animated-border');
+}
+
 
 function computerChoice() {
     // Define the choices and their corresponding probabilities
@@ -33,6 +43,8 @@ function computerChoice() {
 
 function determineWinner(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
+        ties++;
+        document.getElementById('ties').innerText = ties;
         return 'It\'s a tie!';
     } else if ((playerChoice === 'rock' && computerChoice === 'scissors') ||
                (playerChoice === 'paper' && computerChoice === 'rock') ||
@@ -51,15 +63,19 @@ function playerChoice(choice) {
     const computer = computerChoice();
     const result = determineWinner(choice, computer);
     document.getElementById('result').innerHTML = `Player chose ${choice}. Computer chose ${computer}. ${result}`;
+    animateButton(choice);
 }
 
 function restartGame() {
     playerWins = 0;
     computerWins = 0;
+    ties = 0;
     document.getElementById('playerWins').innerText = playerWins;
     document.getElementById('computerWins').innerText = computerWins;
+    document.getElementById('ties').innerText = ties;
     document.getElementById('result').innerText = '';
 }
+
 
 document.getElementById('rock').addEventListener('click', () => playerChoice('rock'));
 document.getElementById('paper').addEventListener('click', () => playerChoice('paper'));

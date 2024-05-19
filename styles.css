@@ -90,3 +90,24 @@ button:hover {
     background-color: red; 
     transform: scale(0.9); 
 }
+
+@keyframes buttonBorderColorRotation {
+    0% {
+        border-color: rgb(255, 0, 0); /* Red */
+    }
+    33% {
+        border-color: rgb(0, 255, 0); /* Green */
+    }
+    66% {
+        border-color: rgb(0, 0, 255); /* Blue */
+    }
+    100% {
+        border-color: rgb(255, 0, 0); /* Red */
+    }
+}
+
+.animated-border {
+    border: 2px solid rgb(255, 0, 0); /* Initial color Red */
+    animation: buttonBorderColorRotation 1s infinite;
+    border-radius: 5px; /* Optional: to match button styling */
+}
